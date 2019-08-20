@@ -35,7 +35,6 @@ export class ServersComponent implements OnInit {
     }
   }
 
-
   clearUsername() {
     this.username = '';
   }
