@@ -12,3 +12,11 @@
 <p>{{ serverCreationStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
+
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="username"
+>
+<p>Your username is: {{ username }}</p>
+<button class="btn btn-basic" [disabled]="usernameEmpty()"(click)="clearUsername()">Clear Username</button>
